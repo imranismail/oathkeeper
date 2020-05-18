@@ -87,8 +87,9 @@ func (a *AuthenticatorOAuth2ClientCredentials) Authenticate(r *http.Request, ses
 	token, err := c.Token(context.WithValue(
 		context.Background(),
 		oauth2.HTTPClient,
-		httpx.NewResilientClientLatencyToleranceMedium(nil),
+		httpx.NewResilientClientLatencyToleranceExtreme(nil),
 	))
+
 	if err != nil {
 		return errors.Wrapf(helper.ErrUnauthorized, err.Error())
 	}
