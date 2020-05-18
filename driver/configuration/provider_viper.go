@@ -46,7 +46,7 @@ const (
 	ViperKeyAPIServeAddressHost        = "serve.api.host"
 	ViperKeyAPIServeAddressPort        = "serve.api.port"
 	ViperKeyAPIReadTimeout             = "serve.api.timeout.read"
-	ViperKeyAPIWriteTimeout            = "serve.API.timeout.write"
+	ViperKeyAPIWriteTimeout            = "serve.api.timeout.write"
 	ViperKeyAPIIdleTimeout             = "serve.api.timeout.idle"
 	ViperKeyPrometheusServeAddressHost = "serve.prometheus.host"
 	ViperKeyPrometheusServeAddressPort = "serve.prometheus.port"
